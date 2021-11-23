@@ -64,22 +64,6 @@
     % format : moderator name/month start/year start/month end/year end
     % months start at 1, year 0 = 2000
 
-    % employment main bars
-    \foreach \mod/\mtha/\yra/\mthb/\yrb/\i in
-        {
-            Marc Gravell/6/10/10/21/1,
-            Tim Post/3/13/11/20/8,
-            Adam Lear/1/12/11/21/12,
-            animuson/3/15/11/21/25,
-            Taryn/6/15/10/21/26
-        }
-        {
-            \fill[fill=mypurple]
-            ({\mtha + 12*(\yra-8.5) - 1}, \i) rectangle
-            ({\mthb + 12*(\yrb-8.5) - 1}, {\i+1});
-            \draw (0, \i) -- (173, \i);
-        }
-
     % moderatorship main bars
     \foreach[count=\i] \mod/\mtha/\yra/\mthb/\yrb in
         {
@@ -140,6 +124,22 @@
             \draw (5, {\i+0.5}) node {\mod}; % mod names left
             \draw (168, {\i+0.5}) node {\mod}; % mod names right
             \fill[fill=myblue]
+            ({\mtha + 12*(\yra-8.5) - 1}, \i) rectangle
+            ({\mthb + 12*(\yrb-8.5) - 1}, {\i+1});
+            \draw (0, \i) -- (173, \i);
+        }
+
+    % employment main bars
+    \foreach \mod/\mtha/\yra/\mthb/\yrb/\i in
+        {
+            Marc Gravell/6/10/10/21/1,
+            Tim Post/3/13/11/20/8,
+            Adam Lear/1/12/11/21/12,
+            animuson/3/15/11/21/25,
+            Taryn/6/15/10/21/26
+        }
+        {
+            \fill[fill=mypurple]
             ({\mtha + 12*(\yra-8.5) - 1}, \i) rectangle
             ({\mthb + 12*(\yrb-8.5) - 1}, {\i+1});
             \draw (0, \i) -- (173, \i);
