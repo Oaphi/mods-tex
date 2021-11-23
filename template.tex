@@ -65,68 +65,76 @@
     % months start at 1, year 0 = 2000
 
     % moderatorship main bars
-    \foreach[count=\i] \mod/\mtha/\yra/\mthb/\yrb in
+    \foreach[count=\i] \mod/\mtha/\yra/\mthb/\yrb/\ovr in
         {
-            Marc Gravell/5/9/6/10,
-            Bill the Lizard/5/9/4/15,
-            Gumbo/2/10/11/11,
-            Jonathan Sampson/2/10/3/13,
-            Will/7/10/7/13,
-            Michael Myers/7/10/11/21,
-            SLaks/2/11/11/11,
-            Tim Post/2/11/3/13,
-            Robert Harvey/2/11/9/19,
-            Lasse V. Karlsen/5/11/3/13,
-            Kev/5/11/5/13,
-            Adam Lear/11/11/1/12,
-            NullUserException/11/11/2/14,
-            jjnguy/11/11/2/14,
-            casperOne/11/11/11/15,
-            BoltClock/11/11/11/21,
-            Brad Larson/6/12/11/21,
-            ThiefMaster/6/12/3/19,
-            George Stocker/6/12/10/19,
-            Andrew Barber/3/13/3/15,
-            Gordon/3/13/11/15,
-            Flexo/3/13/11/21,
-            ChrisF/3/13/11/21,
-            Ry- (minitech)/5/13/11/21,
-            animuson/7/13/3/15,
-            Taryn (bluefeet)/2/14/10/21,
-            Mick MacCallum (0x7fffffff)/2/14/3/16, % resigned on 3/16
-            Bohemian/2/14/11/21,
-            Jeremy Banks/4/15/11/15,
-            meagar/4/15/11/21,
-            Martijn Pieters/4/15/11/21,
-            Matt/6/15/3/18,
-            Jon Clements/6/15/11/21,
-            elixenide (Ed Cottrell)/11/15/10/19,
-            josilber/11/15/11/21,
-            Madara's Ghost (Madara Uchiha)/11/15/1/20,
-            Undo/3/16/11/21,
-            TheLostMind/3/16/3/19,
-            Aaron Hall/11/16/11/21,
-            Bhargav Rao/11/16/11/21,
-            deceze/11/16/11/21,
-            Andy/8/17/11/21,
-            Cody Gray/8/17/11/21,
-            Samuel Liew/3/18/11/21,
-            Rob/3/18/11/21,
-            Yvette Colomb/3/18/9/20,
-            Baum mit Augen/3/19/11/21,
-            Jean-François Fabre/3/19/11/21,
-            Machavity/7/20/11/21,
-            Makyen/7/20/11/21,
-            Stephen Rauch/10/21/11/21,
-            Zoe/10/21/11/21
+            Marc Gravell/5/9/6/10/0, %1
+            Bill the Lizard/5/9/4/15/0, %2
+            Gumbo/2/10/11/11/0, %3
+            Jonathan Sampson/2/10/3/13/0, %4
+            Will/7/10/7/13/0, %5
+            Michael Myers/7/10/11/21/0, %6
+            SLaks/2/11/11/11/0, %7
+            Tim Post/2/11/3/13/0, %8
+            Robert Harvey/2/11/9/19/0, %9
+            Lasse V. Karlsen/5/11/3/13/0, %10
+            Kev/5/11/5/13/0, %11
+            Adam Lear/11/11/1/12/0, %12
+            NullUserException/11/11/2/14/0, %13
+            jjnguy/11/11/2/14/0, %14
+            casperOne/11/11/11/15/0, %15
+            BoltClock/11/11/11/21/0, %16
+            Brad Larson/6/12/11/21/0, %17
+            ThiefMaster/6/12/3/19/0, %18
+            George Stocker/6/12/10/19/0, %19
+            Andrew Barber/3/13/3/15/0, %20
+            Gordon/3/13/11/15/0, %21
+            Flexo/3/13/11/21/0, %22
+            ChrisF/3/13/11/21/0, %23
+            Ry- (minitech)/5/13/11/21/0, %24
+            animuson/7/13/3/15/0, %25
+            Taryn (bluefeet)/2/14/10/21/0, %26
+            Mick MacCallum (0x7fffffff)/2/14/3/16/0, %27
+            Bohemian/2/14/11/21/0, %28
+            Jeremy Banks/4/15/11/15/0, %29
+            meagar/4/15/11/21/0, %30
+            Martijn Pieters/4/15/11/21/0, %31
+            Matt/6/15/3/18/0, %32
+            Jon Clements/6/15/10/19/0, %33
+            elixenide (Ed Cottrell)/11/15/10/19/0, %34
+            josilber/11/15/11/21/0, %35
+            Madara's Ghost (Madara Uchiha)/11/15/1/20/0, %36
+            Undo/3/16/11/21/0, %37
+            TheLostMind/3/16/3/19/0, %38
+            Aaron Hall/11/16/11/21/0, %39
+            Bhargav Rao/11/16/11/21/0, %40
+            deceze/11/16/11/21/0, %41
+            Andy/8/17/11/21/0, %42
+            Cody Gray/8/17/11/21/0, %43
+            Samuel Liew/3/18/11/21/0, %44
+            Rob/3/18/11/21/0, %45
+            Yvette Colomb/3/18/9/20/0, %46
+            Baum mit Augen/3/19/11/21/0, %47
+            Jean-François Fabre/3/19/11/21/0, %48
+            Machavity/7/20/11/21/0, %49
+            Makyen/7/20/11/21/0, %50
+            Stephen Rauch/10/21/11/21/0, %51
+            Zoe/10/21/11/21/0, %52
+            Jon Clements/3/20/11/21/33
         }
         {
-            \draw (5, {\i+0.5}) node {\mod}; % mod names left
-            \draw (168, {\i+0.5}) node {\mod}; % mod names right
-            \fill[fill=myblue]
-            ({\mtha + 12*(\yra-8.5) - 1}, \i) rectangle
-            ({\mthb + 12*(\yrb-8.5) - 1}, {\i+1});
-            \draw (0, \i) -- (173, \i);
+            \ifnum \ovr=0
+                \draw (5, {\i+0.5}) node {\mod}; % mod names left
+                \draw (168, {\i+0.5}) node {\mod}; % mod names right
+                \fill[fill=myblue]
+                ({\mtha + 12*(\yra-8.5) - 1}, \i) rectangle
+                ({\mthb + 12*(\yrb-8.5) - 1}, {\i+1});
+                \draw (0, \i) -- (173, \i);
+            \else
+                \fill[fill=myblue]
+                ({\mtha + 12*(\yra-8.5) - 1}, \ovr) rectangle
+                ({\mthb + 12*(\yrb-8.5) - 1}, {\ovr+1});
+                \draw (0, \ovr) -- (173, \ovr);
+            \fi
         }
 
     % employment main bars
